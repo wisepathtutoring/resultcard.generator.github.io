@@ -1054,7 +1054,7 @@
 
                 // Validate GAS URL
                 // Check if the URL is the placeholder string OR if it doesn't start with the generic GAS Web App prefix
-                if (GOOGLE_APPS_SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE' || !GOOGLE_APPS_SCRIPT_URL.startsWith('https://script.google.com/macros/s/')) {
+                if (GOOGLE_APPS_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbzQHpzzBrakJJiDE27SKNsMREJnAcfmHqfCqb4o4z3wECyT5nKB4DeMCO4WH4BEyBwK/exec' || !GOOGLE_APPS_SCRIPT_URL.startsWith('https://script.google.com/macros/s/')) {
                     alert('Error: Google Apps Script Web App URL is not configured correctly. Please deploy your GAS and update the GOOGLE_APPS_SCRIPT_URL variable in the HTML code with the correct URL, ensuring it starts with "https://script.google.com/macros/s/".');
                     console.error('GOOGLE_APPS_SCRIPT_URL validation failed. Current URL:', GOOGLE_APPS_SCRIPT_URL);
                     return;
